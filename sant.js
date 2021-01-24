@@ -10,38 +10,38 @@ class Sant {
 
     this.animation[0] = new Animator(
       this.spritesheet,
-      18,
+      28,
       42,
-      32,
-      49,
+      33,
+      41,
       4,
       0.5,
-      16,
+      9,
       true,
       true
     );
     this.animation[1] = new Animator(
       this.spritesheet,
-      145,
+      157,
       122,
-      39,
-      52,
+      36,
+      47,
       3,
-      0.2,
-      12,
+      0.5,
+      10,
       true,
       true
     );
 
     this.animation[2] = new Animator(
       this.spritesheet,
-      22,
-      198,
-      37,
-      36,
+      25,
+      202,
+      41,
+      31,
       3,
       0.5,
-      25,
+      20,
       true,
       true
     );
