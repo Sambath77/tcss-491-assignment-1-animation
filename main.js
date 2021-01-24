@@ -2,7 +2,7 @@ var ASSET_MANAGER = new AssetManager();
 
 ASSET_MANAGER.queueDownload("./sprites/gunfire.png");
 ASSET_MANAGER.queueDownload("./sprites/background.png");
-ASSET_MANAGER.queueDownload("./sprites/ghost.png");
+ASSET_MANAGER.queueDownload("./sprites/place.png");
 
 ASSET_MANAGER.downloadAll(function () {
   var gameEngine = new GameEngine();
