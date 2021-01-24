@@ -9,9 +9,23 @@ class SceneManager {
   loadLevelOne() {
     this.game.entities = [];
 
+    let ghost = new Ghost(this.game, PARAMS.BLOCKWIDTH, PARAMS.BLOCKWIDTH);
+    this.game.addEntity(ghost);
+    // let cute = new Cute(this.game, PARAMS.BLOCKWIDTH, PARAMS.BLOCKWIDTH);
+    // this.game.addEntity(cute);
+
+    let background = new BigHill(
+      this.game,
+      PARAMS.BLOCKWIDTH,
+      PARAMS.BLOCKWIDTH
+    );
+    this.game.addEntity(background);
+
     let sant = new Sant(this.game, PARAMS.BLOCKWIDTH, PARAMS.BLOCKWIDTH);
     this.game.addEntity(sant);
   }
 
   draw() {}
+
+  update() {}
 }

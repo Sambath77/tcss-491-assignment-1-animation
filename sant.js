@@ -5,17 +5,43 @@ class Sant {
     //this.game.sant = this;
 
     // spritesheet
+    this.animation = [];
     this.spritesheet = ASSET_MANAGER.getAsset("./sprites/gunfire.png");
 
-    this.animation = new Animator(
+    this.animation[0] = new Animator(
       this.spritesheet,
-      28,
-      44,
-      34,
-      43,
+      18,
+      42,
+      32,
+      49,
       4,
       0.5,
       16,
+      true,
+      true
+    );
+    this.animation[1] = new Animator(
+      this.spritesheet,
+      145,
+      122,
+      39,
+      52,
+      3,
+      0.2,
+      12,
+      true,
+      true
+    );
+
+    this.animation[2] = new Animator(
+      this.spritesheet,
+      22,
+      198,
+      37,
+      36,
+      3,
+      0.5,
+      25,
       true,
       true
     );
@@ -24,6 +50,8 @@ class Sant {
   update() {}
 
   draw(ctx) {
-    this.animation.drawFrame(this.game.clockTick, ctx, 100, 100, 3);
+    this.animation[0].drawFrame(this.game.clockTick, ctx, 300, 525, 3);
+    this.animation[1].drawFrame(this.game.clockTick, ctx, 500, 518, 3);
+    this.animation[2].drawFrame(this.game.clockTick, ctx, 100, 550, 3);
   }
 }
